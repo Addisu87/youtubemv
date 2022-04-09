@@ -1,0 +1,20 @@
+* {
+	font-family: 'Montserrat';
+	text-align: center;
+}
+.logo {
+	width: 25%;
+}
+
+.nav-bar {
+	padding: 0 0 4.5rem;
+}
+
+.nav-item {
+	padding: 0 18px;
+	list-style: none;
+}
+
+.user-logo {
+	width: 15%;
+}
