@@ -4,52 +4,121 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/6c59d03160.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="/css/style.css" />
-		<title>youtubemv</title>
+		<title>youtube Micro-verse</title>
 	</head>
 	<body>
-		<section>
+		<section class="section">
 			<div class="container-fluid">
-				<nav class="navbar navbar-expand-lg navbar-dark">
-					<a href="">
-						<img
-							class="logo"
-							src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg"
-							alt=""
-						/>
-					</a>
+				<!-- Nav Bar -->
 
-					<div>
-						<input type="search" placeholder="search" />
-						<img src="images/search-icon.svg" alt="" />
-					</div>
-
-					<div>
-						<ul>
-							<li class="nav-item">
-								<a class="nav-link" href="#video">
-									<img src="images/video-icon.svg" alt="" />
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#audio">
-									<span>audio</span>
-								</a>
-							</li>
-							<li class="nav-item">
+				<nav class="navbar navbar-light navbar-expand-lg bg-light">
+					<div class="d-flex justify-content-lg-between flex-md-fill">
+						<div class="logo">
+							<a class="navbar-brand" href="#">
 								<img
-									class="user-logo"
-									src="https://i0.wp.com/www.cssscript.com/wp-content/uploads/2020/12/Customizable-SVG-Avatar-Generator-In-JavaScript-Avataaars.js.png?fit=438%2C408&ssl=1"
+									src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg"
 									alt=""
+									width="110"
+									height="50"
+									class="d-inline-block align-text-top"
 								/>
-							</li>
-						</ul>
+							</a>
+						</div>
+
+						<div class="form-box">
+							<form>
+								<div class="input-group">
+									<input
+										class="form-control"
+										type="search"
+										placeholder="Search"
+										aria-label="Search"
+										aria-describedby="basic-addon1"
+									/>
+									<span
+										class="input-group-text"
+										id="basic-addon1"
+									>
+										<i
+											class="fa-solid fa-magnifying-glass"
+										></i>
+									</span>
+								</div>
+							</form>
+
+							<div class="audio">
+								<a href="#" class="">
+									<i class="fa-solid fa-microphone"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="media-types">
+							<div
+								class="list-group list-group-horizontal list-group-flush d-flex flex-fill justify-content-evenly align-items-center"
+							>
+								<a
+									href="#"
+									class="list-group-item list-group-item-action"
+								>
+									<i class="fa-solid fa-video"></i>
+								</a>
+								<a
+									href="#"
+									class="list-group-item list-group-item-action"
+								>
+									<i
+										class="fa-brands fa-buromobelexperte"
+									></i>
+								</a>
+								<a
+									href="#"
+									class="list-group-item list-group-item-action"
+								>
+									<i class="fa-regular fa-bell"></i>
+								</a>
+							</div>
+
+							<div class="user-profile flex-lg-shrink-1">
+								<a href="#"
+									><img
+										class="user-photo-item"
+										src="https://www.ipma.world/assets/tesla.jpg"
+										alt="User Photo"
+										width="50"
+										height="50"
+								/></a>
+							</div>
+						</div>
 					</div>
 				</nav>
 			</div>
-		</section>
 
-		<!-- main -->
-		<!-- side bar -->
+			<div class="layout-container">
+				<!-- Main -->
+				<main>
+					<h1>The main body</h1>
+				</main>
+
+				<!-- Side bar -->
+				<aside>Explanation about the video</aside>
+			</div>
+			<!-- Footer -->
+
+			<footer></footer>
+		</section>
 	</body>
 </html>
