@@ -17,108 +17,199 @@
 			crossorigin="anonymous"
 		></script>
 		<link rel="stylesheet" href="/css/style.css" />
-		<title>youtube Micro-verse</title>
+		<title>Youtube Micro-verse</title>
 	</head>
+
 	<body>
-		<section class="section">
-			<div class="container-fluid">
-				<!-- Nav Bar -->
+		<header class="header">
+			<!-- Nav Bar -->
+			<nav class="navbar navbar-light bg-light">
+				<div class="container-fluid">
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarToggleExternalContent"
+						aria-controls="navbarToggleExternalContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
 
-				<nav class="navbar navbar-light navbar-expand-lg bg-light">
-					<div class="d-flex justify-content-lg-between flex-md-fill">
-						<div class="logo">
-							<a class="navbar-brand" href="#">
-								<img
-									src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg"
-									alt=""
-									width="110"
-									height="50"
-									class="d-inline-block align-text-top"
-								/>
-							</a>
+					<div class="collapse" id="navbarToggleExternalContent">
+						<ul class="list-unstyled">
+							<li>
+								<a href="#home" class="nav-link scrollto active"
+									><i class="fa-solid fa-house"></i>
+									<span>Home</span>
+								</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#explore">
+									<i class="fa-regular fa-compass"></i>
+									<span>Explore</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#shorts">
+									<i class="fa-solid fa-play"></i>
+									<span>Shorts</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#subscription">
+									<i class="fa-solid fa-file-circle-plus"></i>
+									<span>Subscription</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="logo">
+						<img
+							class="align-text-top"
+							src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6.jpg"
+							alt=""
+							width="120"
+							height="55"
+						/>
+					</div>
+
+					<form class="d-flex flex-grow-1">
+						<div class="input-group">
+							<input
+								class="form-control"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+								aria-describedby="basic-addon1"
+							/>
+							<span class="input-group-text" id="basic-addon1">
+								<button
+									class="btn btn-outline-success"
+									type="submit"
+								>
+									<i class="fa-solid fa-magnifying-glass"></i>
+								</button>
+							</span>
 						</div>
+					</form>
 
-						<div class="form-box">
-							<form>
-								<div class="input-group">
-									<input
-										class="form-control"
-										type="search"
-										placeholder="Search"
-										aria-label="Search"
-										aria-describedby="basic-addon1"
-									/>
-									<span
-										class="input-group-text"
-										id="basic-addon1"
-									>
-										<i
-											class="fa-solid fa-magnifying-glass"
-										></i>
-									</span>
-								</div>
-							</form>
+					<div class="user-details">
+						<a href="#">
+							<i
+								id="item"
+								class="fa-solid fa-lg fa-microphone"
+							></i>
+						</a>
+						<a href="#">
+							<i id="item" class="fa-solid fa-video fa-lg"></i>
+						</a>
+						<a href="#">
+							<i
+								id="item"
+								class="fa-brands fa-buromobelexperte fa-lg"
+							></i>
+						</a>
+						<a href="#">
+							<i id="item" class="fa-regular fa-lg fa-bell"></i>
+						</a>
 
-							<div class="audio">
-								<a href="#" class="">
-									<i class="fa-solid fa-microphone"></i>
-								</a>
-							</div>
-						</div>
+						<a href="#"
+							><img
+								class="user-photo-item"
+								src="https://www.ipma.world/assets/tesla.jpg"
+								alt="User Photo"
+								width="50"
+								height="50"
+						/></a>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-						<div class="media-types">
-							<div
-								class="list-group list-group-horizontal list-group-flush d-flex flex-fill justify-content-evenly align-items-center"
-							>
-								<a
-									href="#"
-									class="list-group-item list-group-item-action"
-								>
-									<i class="fa-solid fa-video"></i>
-								</a>
-								<a
-									href="#"
-									class="list-group-item list-group-item-action"
-								>
-									<i
-										class="fa-brands fa-buromobelexperte"
-									></i>
-								</a>
-								<a
-									href="#"
-									class="list-group-item list-group-item-action"
-								>
-									<i class="fa-regular fa-bell"></i>
-								</a>
-							</div>
+		<!-- Main -->
+		<main class="layout-container">
+			<!-- Article -->
+			<article class="content">
+				<div class="article-item">
+					<iframe
+						width="900"
+						height="515"
+						src="https://www.youtube.com/embed/ly3iGh3MA44"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
 
-							<div class="user-profile flex-lg-shrink-1">
-								<a href="#"
-									><img
-										class="user-photo-item"
-										src="https://www.ipma.world/assets/tesla.jpg"
-										alt="User Photo"
-										width="50"
-										height="50"
-								/></a>
-							</div>
+					<div class="details">
+						<p>Father vs daughter beat-box challenge</p>
+						<div class="explaniations">
+							<i class="fa-solid fa-thumbs-up">2.9k</i>
+							<i class="fa-regular fa-thumbs-down">Dislike</i>
+							<i class="fa-solid fa-share">Share</i>
+							<i class="fa-solid fa-scissors">Clip</i>
 						</div>
 					</div>
-				</nav>
-			</div>
+				</div>
+			</article>
 
-			<div class="layout-container">
-				<!-- Main -->
-				<main>
-					<h1>The main body</h1>
-				</main>
+			<!-- Nav bar -->
 
-				<!-- Side bar -->
-				<aside>Explanation about the video</aside>
-			</div>
-			<!-- Footer -->
+			<!-- Side bar -->
+			<aside class="sidebar">
+				<div class="sidebar-details">
+					<ul class="list-unstyled d-flex justify-content-evenly">
+						<li class="item">
+							<a class="active" href="#">All</a>
+						</li>
+						<li class="item"><a href="#">Recent</a></li>
+						<li class="item">
+							<a href="#">Related</a>
+						</li>
+						<li class="item"><a href="#">Watched</a></li>
+					</ul>
+				</div>
 
-			<footer></footer>
-		</section>
+				<ul class="btn-toggle-nav list-unstyled pb-1 small">
+					<li>
+						<iframe
+							width="360"
+							height="215"
+							src="https://www.youtube.com/embed/Qi7IsPz5V6g"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</li>
+					<li>
+						<iframe
+							width="360"
+							height="215"
+							src="https://www.youtube.com/embed/P9JM5eeJstc"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</li>
+					<li>
+						<iframe
+							width="360"
+							height="215"
+							src="https://www.youtube.com/embed/vhd2ZtvXyCw"
+							title="YouTube video player"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen
+						></iframe>
+					</li>
+				</ul>
+			</aside>
+		</main>
 	</body>
 </html>
