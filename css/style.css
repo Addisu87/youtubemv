@@ -1,61 +1,62 @@
 * {
-	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-	margin: 0;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
 }
 
 .container-fluid {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .user-details {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-grow: 1;
 }
 
 .user-photo-item {
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Main section with aside bar */
 
 main {
-	width: 100%;
-	display: flex;
-	margin: 10px 15px;
+  width: 100%;
+  display: flex;
+  margin: 10px 15px;
 }
 
 main > article {
-	order: 2;
-	min-width: 12em;
-	flex: 1;
-	margin-left: 10px;
+  order: 2;
+  min-width: 12em;
+  flex: 1;
+  margin-left: 10px;
 }
+
 /* main > nav {
 	order: 1;
 	width: 200px;
 } */
 
 main > aside {
-	order: 3;
-	width: -450px;
+  order: 3;
+  width: -450px;
 }
 
 @media all and (max-width: 600px) {
-	/* Too narrow to support three columns */
-	main {
-		flex-flow: column;
-	}
-	main > article,
-	/* main > nav, */
-	main > aside {
-		/* Return them to document order */
-		order: 0;
-		width: auto;
-	}
+  /* Too narrow to support three columns */
+  main {
+    flex-flow: column;
+  }
+
+  main > article,
+  main > aside {
+    /* Return them to document order */
+    order: 0;
+    width: auto;
+  }
 }
